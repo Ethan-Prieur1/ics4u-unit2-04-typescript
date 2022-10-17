@@ -15,9 +15,13 @@ const prompt = promptSync()
 const someNumberString = prompt('enter a number: ')
 const someNumberInt = parseInt(someNumberString)
 myNewStack.push(someNumberInt)
+
 console.log('stack before pop: ', myNewStack.getStack())
 myNewStack.peek()
 
 myNewStack.pop()
 console.log('stack after pop: ', myNewStack.getStack())
+
+myNewStack.clear()
+console.log('stack after clear: ', myNewStack.getStack())
 console.log('\nDone')

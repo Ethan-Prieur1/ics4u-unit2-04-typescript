@@ -38,9 +38,13 @@ class Stack {
     if (this.stackArray.length === 0) {
       console.log('Nothing to Peek')
     } else {
-      console.log(`The Peek is: ${this.stackArray[0]}`)
+      console.log(`The Peek is: ${this.stackArray[this.stackArray.length - 1]}`)
     }
   }
-}
 
+  public clear(): void {
+    // clears the entire list
+    this.stackArray.splice(0)
+  }
+}
 export = Stack
